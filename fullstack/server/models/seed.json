@@ -1,0 +1,68 @@
+[
+    {
+        "_id": "62f11da645fe727e36976645",
+        "title": "Iphone 13",
+        "type": "Iphone",
+        "boxArt": "https://specifications-pro.com/wp-content/uploads/2021/08/iPhone-13-2.jpg",
+        "price": "1000 $",
+        "details": "Great phone",
+        "createdAt": "2022-08-08T14:28:54.725Z",
+        "updatedAt": "2022-08-08T14:28:54.725Z",
+        "__v": 0
+    },
+    {
+        "_id": "62f15064b9bb98b1bb149017",
+        "title": "Iphone 13 Pro Max",
+        "type": "Iphone",
+        "boxArt": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZqM47XzYB7SGVQerU_fbHg54W9h102rwHwow-lacCpJYgcmdoLmmlgOpwk_fXSAUfui0&usqp=CAU",
+        "price": "1000 $",
+        "details": "Great phone",
+        "createdAt": "2022-08-08T18:05:24.701Z",
+        "updatedAt": "2022-08-08T18:08:31.173Z",
+        "__v": 0
+    },
+    {
+        "_id": "62f15146b9bb98b1bb149022",
+        "title": "Iphone 13 Pro Max",
+        "type": "Iphone",
+        "boxArt": "https://cdn1.smartprix.com/rx-iEikSUWuj-w1200-h1200/EikSUWuj.jpg",
+        "price": "1000 $",
+        "details": "Great phone",
+        "createdAt": "2022-08-08T18:09:10.066Z",
+        "updatedAt": "2022-08-08T18:09:10.066Z",
+        "__v": 0
+    },
+    {
+        "_id": "62f151c6b9bb98b1bb149025",
+        "title": "Iphone 12 Pro Max",
+        "type": "Iphone",
+        "boxArt": "https://asset.conrad.com/media10/isa/160267/c1/-/en/002564411PI00/image.jpg",
+        "price": "1000 $",
+        "details": "Great phone",
+        "createdAt": "2022-08-08T18:11:18.705Z",
+        "updatedAt": "2022-08-08T18:11:18.705Z",
+        "__v": 0
+    },
+    {
+        "_id": "62f151d1b9bb98b1bb149027",
+        "title": "Iphone 13",
+        "type": "Iphone",
+        "boxArt": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443088_sd.jpg",
+        "price": "1000 $",
+        "details": "Great phone",
+        "createdAt": "2022-08-08T18:11:29.917Z",
+        "updatedAt": "2022-08-08T18:11:29.917Z",
+        "__v": 0
+    },
+    {
+        "_id": "62f1565ab9bb98b1bb14903c",
+        "title": "Iphone 13",
+        "type": "Iphone",
+        "boxArt": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487219_sd.jpg",
+        "price": "1000 $",
+        "details": "Great phone",
+        "createdAt": "2022-08-08T18:30:50.534Z",
+        "updatedAt": "2022-08-08T18:30:50.534Z",
+        "__v": 0
+    }
+]
