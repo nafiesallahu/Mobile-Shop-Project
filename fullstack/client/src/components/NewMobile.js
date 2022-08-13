@@ -31,7 +31,6 @@ const NewMobile = () => {
   return (
     <div className="card2">
       <form className="formstyle" onSubmit={handleSubmit}>
-        {/* <div class="form-row col-md-12 "> */}
         <div class="form-group col-md-10">
           <label for="exampleInputEmail1">Title</label>
           <input
@@ -99,7 +98,6 @@ const NewMobile = () => {
         </div>
 
         <button class="btn btn-success">Save</button>
-        {/* </div> */}
       </form>
     </div>
   );

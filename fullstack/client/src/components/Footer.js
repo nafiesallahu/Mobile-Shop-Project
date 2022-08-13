@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import "./Footer.css";
 import {
   AiOutlineFacebook,
@@ -7,7 +5,6 @@ import {
   AiOutlineTwitter
 } from "react-icons/ai";
 
-import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="">
@@ -76,14 +73,6 @@ const Footer = () => {
               <div className="col-sm-5">
                 <p className="copyright text-uppercase">Copyright © 2022</p>
               </div>
-              {/* <div className="col-sm-7">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our services</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div> */}
             </div>
           </div>
         </div>

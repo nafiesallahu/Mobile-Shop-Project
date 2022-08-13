@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import io from "socket.io-client";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { GoThumbsup } from "react-icons/go";
-import { FaHome } from "react-icons/fa";
-// import "./Details.css";
 
 const Details = (props) => {
   const [mobile, setMobile] = useState("");
   const { id } = useParams();
   const [allMobiles, setAllMobiles] = useState([]);
-  //   const [socket] = useState(() => io(":8000"));
 
   const navigate = useNavigate();
   console.log(id, "P");
@@ -41,14 +36,6 @@ const Details = (props) => {
         console.log("error deleting mobile", err.response);
       });
   };
-  //   const handleDelete = (id) => {
-  //     console.log("DELETE", id);
-  //     socket.emit("deletedMobile", id);
-  //   };
-  //   socket.on("petDeleted", (deletedId) => {
-  //     setAllPets(allPets.filter((pet) => pet._id !== deletedId));
-  //     navigate("/");
-  //   });
 
   return (
     <div className="container mt-3">
