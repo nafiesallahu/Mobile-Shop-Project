@@ -25,10 +25,9 @@ const Home = () => {
       </div>
       <p id="new">NEWEST IPHONE</p>
       <div className="the-button">
-        <button id="plus" type="button" class="btn btn-primary">
-          {" "}
-          Add <AiOutlinePlus />{" "}
-        </button>
+        <a class="btn btn-primary" href="/newmobile" role="button">
+          Add <AiOutlinePlus />
+        </a>
       </div>
       <div className="card-deck">
         {mobiles.map((mobile) => (

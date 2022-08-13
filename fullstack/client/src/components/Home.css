@@ -37,6 +37,11 @@
   border: none;
   font-size: 20px;
 }
+#plus a {
+  color: white;
+  text-decoration: none;
+  alignment-baseline: middle;
+}
 #new {
   font-size: 30px;
   font-family: revert;
