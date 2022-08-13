@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import NewMobile from "./components/NewMobile";
 import Details from "./components/Details";
 import "bootstrap/dist/css/bootstrap.css";
+import EditMobile from "./components/EditMobile";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/newmobile" element={<NewMobile />} />
             <Route path="/details/:id" element={<Details />} />
+            <Route path="/edit/:id" element={<EditMobile />} />
           </Routes>
         </div>
       </BrowserRouter>

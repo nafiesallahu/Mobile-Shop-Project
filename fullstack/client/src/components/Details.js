@@ -25,6 +25,22 @@ const Details = (props) => {
       })
       .catch((err) => console.log("GET MOBILE BY ID ERROR", err));
   }, [id]);
+  const handleDeleteMobile = (idFromBelow) => {
+    axios
+      .delete(`http://localhost:8000/api/mobiles/${idFromBelow}`)
+      .then((response) => {
+        console.log("success deleting mobile");
+        console.log(response);
+        const filteredMobiles = allMobiles.filter((mobile) => {
+          return mobile._id !== idFromBelow;
+        });
+        setAllMobiles(filteredMobiles);
+        navigate("/");
+      })
+      .catch((err) => {
+        console.log("error deleting mobile", err.response);
+      });
+  };
   //   const handleDelete = (id) => {
   //     console.log("DELETE", id);
   //     socket.emit("deletedMobile", id);
@@ -44,7 +60,7 @@ const Details = (props) => {
           </div>
           <div className="full d-flex justify-content-center">
             <div className="right mt-3 mb-5">
-              <img src={mobile.boxArt} alt="img" />
+              <img style={{ width: "250px" }} src={mobile.boxArt} alt="img" />
               <h4 className="mt-3"> {mobile.title}</h4>
 
               <p>Type: {mobile.type}</p>
@@ -55,6 +71,7 @@ const Details = (props) => {
               </Link>
               <Link
                 to={`/delete/${mobile._id}`}
+                onClick={() => handleDeleteMobile(mobile._id)}
                 className="btn btn-danger mx-2"
               >
                 Delete
