@@ -1,0 +1,32 @@
+.header {
+  background-color: black;
+  color: #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  color: #eee;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+.container2 {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.container2 img {
+  width: 40px;
+  margin-right: 10px;
+}
+.title {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff9b6ed;
+}
