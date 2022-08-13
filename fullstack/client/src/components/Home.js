@@ -25,23 +25,34 @@ const Home = () => {
       </div>
       <p id="new">NEWEST IPHONE</p>
       <div className="the-button">
-        <a class="btn btn-primary" href="/newmobile" role="button">
+        <a className="btn btn-primary" href="/newmobile" role="button">
           Add <AiOutlinePlus />
         </a>
       </div>
       <div className="card-deck">
-        {mobiles.map((mobile) => (
-          <div className="card">
-            <img src={mobile.boxArt} alt="img" />
-            <div className="card-body">
-              <h5 className="card-title">{mobile.title}</h5>
-              <p className="card-text">{mobile.price}</p>
-              <button type="button" class="btn btn-info">
+        {mobiles.map((mobile, index) => {
+          return (
+            <div className="card" key={mobile._id}>
+              <img src={mobile.boxArt} alt="img" />
+              <div className="card-body">
+                <h5 className="card-title">{mobile.title}</h5>
+                <p className="card-text">{mobile.price}</p>
+                {/* <button type="button" class="btn btn-info">
                 Details
-              </button>
+              </button> */}
+                {/* <a className="btn btn-info" href="/details" role="button">
+                  Details{" "}
+                </a> */}
+                <Link
+                  to={`/details/${mobile._id}`}
+                  className="btn btn-info mx-2"
+                >
+                  Details
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

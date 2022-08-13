@@ -25,7 +25,7 @@ function App() {
             <Route path="/iphone" element={<Iphone />} />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/newmobile" element={<NewMobile />} />
-            <Route path="/details" element={<Details />} />
+            <Route path="/details/:id" element={<Details />} />
           </Routes>
         </div>
       </BrowserRouter>
