@@ -54,6 +54,9 @@ const NewMobile = () => {
             <option>Please select </option>
             <option value="Iphone">iPhone</option>
             <option value="Samsung">Samsung</option>
+            <option value="IPad">iPad</option>
+            <option value="Mac">Mac</option>
+            <option value="Accessories">Accessories</option>
           </select>
           {errors.type && (
             <span className="text-danger">{errors.type.message}</span>

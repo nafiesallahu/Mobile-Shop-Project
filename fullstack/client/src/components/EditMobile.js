@@ -21,7 +21,7 @@ const EditMobile = () => {
         setPrice(res.data.price);
         setDetails(res.data.details);
       })
-      .catch((err) => console.log("GET MOBILE BY ID ERROR", err));
+      .catch((err) => setErrors(err.response.data.errors));
   }, []);
 
   const handleSubmit = (e) => {

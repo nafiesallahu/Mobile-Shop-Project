@@ -22,7 +22,7 @@ const Home = () => {
       <div className="home-img">
         <img src={iphone} alt="img" />
       </div>
-      <p id="new">NEWEST IPHONE</p>
+      <p id="new">THE NEWEST PRODUCTS</p>
       <div className="the-button">
         <a className="btn btn-primary" href="/newmobile" role="button">
           Add <AiOutlinePlus />

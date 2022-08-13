@@ -24,6 +24,9 @@ const Header = () => {
           <NavLink className="nav-link" to="/iphone">
             IPHONE
           </NavLink>
+          <NavLink className="nav-link" to="/samsung">
+            SAMSUNG
+          </NavLink>
           <NavLink className="nav-link" to="/accessories">
             ACCESSORIES
           </NavLink>

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import iphone from "../images/iphone.jpg";
+import samsung from "../images/samsung.jpg";
 import { AiOutlinePlus } from "react-icons/ai";
 import "./Home.css";
-const Iphone = () => {
+const Samsung = () => {
   const [mobiles, setMobiles] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Iphone = () => {
   return (
     <div className="container">
       <div className="home-img">
-        <img src={iphone} alt="img" />
+        <img src={samsung} alt="img" />
       </div>
       <p id="new">THE NEWEST PRODUCTS</p>
       <div className="the-button">
@@ -29,7 +29,7 @@ const Iphone = () => {
       </div>
       <div className="card-deck">
         {mobiles.map((mobile, index) => {
-          if (mobile.type === "Iphone") {
+          if (mobile.type === "Samsung") {
             return (
               <div className="card" key={mobile._id}>
                 <img src={mobile.boxArt} alt="img" />
@@ -54,4 +54,4 @@ const Iphone = () => {
   );
 };
 
-export default Iphone;
+export default Samsung;

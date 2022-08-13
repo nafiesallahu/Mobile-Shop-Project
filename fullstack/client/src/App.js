@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Mac from "./components/Mac";
 import Ipad from "./components/Ipad";
 import Iphone from "./components/Iphone";
+import Samsung from "./components/Samsung";
 import Accessories from "./components/Accessories";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -24,6 +25,7 @@ function App() {
             <Route path="/mac" element={<Mac />} />
             <Route path="/ipad" element={<Ipad />} />
             <Route path="/iphone" element={<Iphone />} />
+            <Route path="/samsung" element={<Samsung />} />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/newmobile" element={<NewMobile />} />
             <Route path="/details/:id" element={<Details />} />

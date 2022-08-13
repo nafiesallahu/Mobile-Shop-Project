@@ -10,7 +10,7 @@ const MobileSchema = mongoose.Schema(
     type: {
       type: String,
       required: [true, "A mobile type is required!!"],
-      enum: ["Iphone", "IPad", "Mac", "Accessories"]
+      enum: ["Iphone", "Samsung", "IPad", "Mac", "Accessories"]
     },
     boxArt: {
       type: String,
