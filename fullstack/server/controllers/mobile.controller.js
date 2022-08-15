@@ -10,7 +10,7 @@ module.exports = {
         console.log("ERROR IN Get all", err);
         res.status(400).json({
           message: "something went wrong in find all mobiles",
-          error: err,
+          error: err
         });
       });
   },
@@ -35,24 +35,25 @@ module.exports = {
         console.log("ERROR IN create Mobile", err);
         res.status(400).json({
           message: "something went wrong in create Mobile",
-          errors: err.errors,
+          errors: err.errors
         });
       });
   },
   updateMobile: (req, res) => {
     Mobile.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true,
-      runValidators: true,
+      runValidators: true
     })
       .then((mobile) => {
         res.json(mobile);
       })
       .catch((err) => {
         console.log("ERROR IN update mobile", err);
-        res.status(400).json({
-          message: "something went wrong in update mobile",
-          error: err,
-        });
+        // res.status(400).json({
+        //   message: "something went wrong in update mobile",
+        //   error: err,
+        // });
+        res.status(400).json({ err });
       });
   },
   deleteMobile: (req, res) => {
@@ -64,8 +65,8 @@ module.exports = {
         console.log("ERROR IN delete mobile", err);
         res.status(400).json({
           message: "something went wrong in delete mobile",
-          error: err,
+          error: err
         });
       });
-  },
+  }
 };

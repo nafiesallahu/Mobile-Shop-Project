@@ -21,7 +21,7 @@ const EditMobile = () => {
         setPrice(res.data.price);
         setDetails(res.data.details);
       })
-      .catch((err) => setErrors(err.response.data.errors));
+      .catch((err) => console.log(err));
   }, []);
 
   const handleSubmit = (e) => {
@@ -38,7 +38,10 @@ const EditMobile = () => {
         console.log(res.data);
         navigate("/");
       })
-      .catch((err) => console.log("POST ERROR", err));
+      .catch((err) => {
+        setErrors(err.response.data.err.errors);
+        console.log(err, "errori");
+      });
   };
 
   return (
@@ -52,9 +55,9 @@ const EditMobile = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-          {errors.title && (
+          {errors.title ? (
             <span className="text-danger">{errors.title.message}</span>
-          )}
+          ) : null}
         </div>
         <div class="form-group col-md-10">
           <label>Type</label>
@@ -68,9 +71,9 @@ const EditMobile = () => {
             <option value="Iphone">iPhone</option>
             <option value="Samsung">Samsung</option>
           </select>
-          {errors.type && (
+          {errors.type ? (
             <span className="text-danger">{errors.type.message}</span>
-          )}
+          ) : null}
         </div>
         <div class="form-group col-md-10">
           <label>Box Art</label>
@@ -80,9 +83,9 @@ const EditMobile = () => {
             value={boxArt}
             onChange={(e) => setBoxArt(e.target.value)}
           />
-          {errors.boxArt && (
+          {errors.boxArt ? (
             <span className="text-danger">{errors.boxArt.message}</span>
-          )}
+          ) : null}
         </div>
         <div class="form-group col-md-10">
           <label>Price</label>
@@ -92,9 +95,9 @@ const EditMobile = () => {
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
-          {errors.price && (
+          {errors.price ? (
             <span className="text-danger">{errors.price.message}</span>
-          )}
+          ) : null}
         </div>
         <div class="form-group col-md-10">
           <label>Details</label>
@@ -105,9 +108,6 @@ const EditMobile = () => {
             placeholder="Please add details"
             onChange={(e) => setDetails(e.target.value)}
           />
-          {errors.details && (
-            <span className="text-danger">{errors.details.message}</span>
-          )}
         </div>
 
         <button class="btn btn-success">Save</button>
