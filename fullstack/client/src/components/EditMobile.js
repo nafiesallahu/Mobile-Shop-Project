@@ -47,7 +47,7 @@ const EditMobile = () => {
   return (
     <div className="card2">
       <form className="formstyle" onSubmit={handleSubmit}>
-        <div class="form-group col-md-10">
+        <div className="form-group col-md-10">
           <label for="exampleInputEmail1">Title</label>
           <input
             type="text"
@@ -59,7 +59,7 @@ const EditMobile = () => {
             <span className="text-danger">{errors.title.message}</span>
           ) : null}
         </div>
-        <div class="form-group col-md-10">
+        <div className="form-group col-md-10">
           <label>Type</label>
           <select
             className="form-control"
@@ -75,7 +75,7 @@ const EditMobile = () => {
             <span className="text-danger">{errors.type.message}</span>
           ) : null}
         </div>
-        <div class="form-group col-md-10">
+        <div className="form-group col-md-10">
           <label>Box Art</label>
           <input
             className="form-control"
@@ -87,7 +87,7 @@ const EditMobile = () => {
             <span className="text-danger">{errors.boxArt.message}</span>
           ) : null}
         </div>
-        <div class="form-group col-md-10">
+        <div className="form-group col-md-10">
           <label>Price</label>
           <input
             className="form-control"
@@ -99,7 +99,7 @@ const EditMobile = () => {
             <span className="text-danger">{errors.price.message}</span>
           ) : null}
         </div>
-        <div class="form-group col-md-10">
+        <div className="form-group col-md-10">
           <label>Details</label>
           <input
             type="text"
@@ -110,7 +110,7 @@ const EditMobile = () => {
           />
         </div>
 
-        <button class="btn btn-success">Save</button>
+        <button className="btn btn-success">Save</button>
       </form>
     </div>
   );

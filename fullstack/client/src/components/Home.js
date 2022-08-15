@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import iphone from "../images/iphone.jpg";
 import { AiOutlinePlus } from "react-icons/ai";
 import "./Home.css";
+import Question from "./Questions";
+import "bootstrap/dist/css/bootstrap.css";
+import Buystrip from "./Buystrip";
 
 const Home = () => {
   const [mobiles, setMobiles] = useState([]);
@@ -46,6 +49,8 @@ const Home = () => {
             </div>
           );
         })}
+        <Buystrip />
+        <Question />
       </div>
     </div>
   );
